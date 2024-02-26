@@ -5,9 +5,9 @@
   "main": "index.js",
   "type": "module",
   "scripts": {
-    "start": "node --es-module-specifier-resolution=node build/index.js",
+    "start": "node --experimental-modules --es-module-specifier-resolution=node build/index.js",
     "serve": "nodemon",
-    "build": "pnpm install && tsc"
+    "build": "pnpm install && npx tsc"
   },
   "keywords": [],
   "author": "",
