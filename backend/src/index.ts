@@ -11,6 +11,8 @@ import errorHandler from "./middlewares/errorMiddleware";
 dotenv.config();
 connectDB();
 
+const PORT = process.env.PORT || 5000;
+
 const app = express();
 
 app.use(cors());
@@ -24,6 +26,6 @@ app.use("/api/skills", skillsRouter);
 
 app.use(errorHandler);
 
-server.listen(5000, () => {
-  console.log("Server running on http://localhost:5000/");
+server.listen(PORT, () => {
+  console.log("Server running on PORT " + PORT);
 });
