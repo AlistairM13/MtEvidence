@@ -2,7 +2,7 @@ import express from "express";
 import http from "http";
 import bodyParser from "body-parser";
 import cors from "cors";
-import connectDB from "./config/mongodb";
+import connectDB from "./services/mongodb";
 import skillsRouter from "./routes/skillsRoute";
 
 import dotenv from "dotenv";

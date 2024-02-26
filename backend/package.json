@@ -7,7 +7,7 @@
   "scripts": {
     "start": "node --experimental-modules --es-module-specifier-resolution=node build/index.js",
     "serve": "nodemon",
-    "build": "pnpm install && npx tsc"
+    "build": "pnpm install && tsc"
   },
   "keywords": [],
   "author": "",
