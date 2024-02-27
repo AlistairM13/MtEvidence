@@ -54,7 +54,11 @@ export const useSkillStore = create<SkillState & SkillActions>()(
           skills: state.skills.map(skill =>
             skill.id === skillId
               ? {
-                  ...skill,
+                  id: skill.id,
+                  name: skill.name,
+                  imageInHead: skill.imageInHead,
+                  progress: state.skills.length + 1,
+                  userId: skill.userId,
                   journal: [
                     ...skill.journal,
                     {entry, timestamp: new Date().getTime()},
