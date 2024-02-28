@@ -5,10 +5,7 @@
   "main": "index.js",
   "type": "module",
   "scripts": {
-    "start": "ts-node src/index.ts",
-    "serve": "nodemon",
-    "build": "tsc",
-    "vercel-build": "echo hello"
+    "dev": "nodemon"
   },
   "keywords": [],
   "author": "",
